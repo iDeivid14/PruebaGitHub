@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+KR:wght@100..900&family=Oswald:wght@200..700&family=Playwrite+IT+Moderna:wght@100..400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-weight: normal;
+    box-sizing: border-box;
+} 
+
+body{
+    background-color: #333533;
+}
+
+.inicio{
+    background-color: #171717;
+    padding: 20px 0;
+}
+
+header{
+    background: #171717;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+
+}
+
+.logo img {
+    width: 55%;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.listaE{
+    display: flex;
+    gap: 100px;
+}
+
+#inicio1{
+    color: #ffe134;
+    font-weight: bold;
+}
+
+.listaE li a {
+    color: white;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-size: 22px;
+    transition: color 0.4s, font-weight 0.4s;
+}
+
+.lupa{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 25px;
+    border: 4px solid white;
+    transition: all 1.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(100% - 50px);
+    height: 42.5px;
+    line-height: 30px;
+    outline: 0;
+    border: 0;
+    display: none;
+    font-size: 1em;
+    border-radius: 20px;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.fa-solid{
+            box-sizing: border-box;
+            padding: 10px;
+            width: 42.5px;
+            height: 42.5px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            border-radius: 50%;
+            color: #ffe134;
+            text-align: center;
+            font-size: 1.2em;
+            transition: all 1.2s;
+}
+
+.lupa:hover{
+    width: 300px;
+    cursor: pointer;
+}
+
+.lupa:hover input {
+    display: block;
+}
+
+.lupa:hover .fa-solid{
+    background-color: #ffe100;
+    color: #ffffff;
+}
+.listaE li a:hover{
+    color: #ffe134;
+    font-weight: bold;
+}
+
+hr{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+section{
+    background-color: #171717;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu {
+        width: 100%;
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+    }
+
+    .menu.responsive {
+        display: flex;
+    }
+
+    .listaE {
+        flex-direction: column;
+        width: 100%;
+        gap: 0;
+    }
+
+    .listaE li {
+        width: 100%;
+        text-align: left;
+        padding: 10px 20px;
+        border-bottom: 1px solid #333;
+    }
+
+    .icon {
+        display: block;
+    }
+}
+
+hr {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+section{
+    padding: 80px;
+}
+
+.btn-registro {
+    position: absolute;
+    top: 110%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+   }
+
+.btn-registro input {
+    height: 70px;
+    width: 290px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 25px;
+    margin-left: 170px;
+}
+.btn-registro input[type="email"]{
+    display: block;
+}
+
+.btn-registro button {
+    height: 70px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffe134;
+    color: #171717;
+    font-size: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-registro button:hover {
+    background-color: #010101;
+    color: rgb(250, 250, 250);
+}
+
+.sec-productos{
+    
+    margin: 0 auto;
+    background-color: white;
+    width:90%;
+    padding: 10px;
+    display: grid;
+    grid-template-areas: 'grande pequeña';
+    column-gap: 10px;
+}
+
+.sec-productos .productoGrande{
+    margin: auto 0;
+    display: grid;
+    grid-area: grande;
+    grid-column: 1fr;
+    grid-row: 1fr;
+    background-color: rgb(255, 255, 255);
+
+}
+
+/* .sec-productos .productoGrande img{
+    width: ;
+} */
+
+.sec-productos .productoPequeño{
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-area: pequeña;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 5px;
+    row-gap: 5px;
+    justify-items: center;
+    align-items: center;
+}
+
+
+.sec-productos .productoPequeño div{
+    display: grid;
+    justify-content: center;
+    border: 5px #ffe134;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333533;
+    color: white;
+    font-size: 20px;
+  }
+  
+  .footer-logo {
+    order: 2;
+    text-align: center;
+    flex: 1;
+  }
+  
+  .footer-contacto {
+    order: 1;
+    text-align: left;
+    flex: 1;
+  }
+
+  .footer-contacto h3 {
+    margin-top: 20px;
+  }
+  
+  .footer-redes {
+    order: 3;
+    text-align: right;
+    flex: 1;
+  }
+  
+  .footer img {
+    max-width: 100%;
+    height: auto;
+  }
+
+.barra{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    height: 5px;
+    display: flex;
+    margin-bottom: 10px;
+    margin-left: 250px;
+    margin-right: 250px;
+}
+
+.fondo h4{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.banner button{
+    background-color: #333533;
+    color: #ffffff;
+    border:solid 2px rgb(255, 255, 255);
+    padding: 10px 20px;
+    position: absolute;
+    display: flex;
+    margin: 0 auto;
+    right: 42%;
+    transform: translateY(-200%);
+    border-radius: 20px;
+    transition: 0.3s ease;
+}
+
+.banner button a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.banner button:hover{
+    background-color:rgb(0, 0, 0) ;
+}

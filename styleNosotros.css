@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+KR:wght@100..900&family=Oswald:wght@200..700&family=Playwrite+IT+Moderna:wght@100..400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-weight: normal;
+    box-sizing: border-box;
+}
+
+.inicio{
+    background-color: #171717;
+    padding: 20px 0;
+}
+
+body{
+    background-color: #333533;
+}
+
+header{
+    background: #171717;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+
+}
+
+.logo img {
+    width: 55%;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.listaE{
+    display: flex;
+    gap: 100px;
+}
+
+.listaE li a {
+    color: white;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-size: 22px;
+    transition: color 0.4s, font-weight 0.4s;
+}
+
+.lupa{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 25px;
+    border: 4px solid white;
+    transition: all 1.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(100% - 50px);
+    height: 42.5px;
+    line-height: 30px;
+    outline: 0;
+    border: 0;
+    display: none;
+    font-size: 1em;
+    border-radius: 20px;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.fa-solid{
+            box-sizing: border-box;
+            padding: 10px;
+            width: 42.5px;
+            height: 42.5px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            border-radius: 50%;
+            color: #ffe134;
+            text-align: center;
+            font-size: 1.2em;
+            transition: all s;
+}
+
+.lupa:hover{
+    width: 300px;
+    cursor: pointer;
+}
+
+.lupa:hover input {
+    display: block;
+}
+
+.lupa:hover .fa-solid{
+    background-color: #ffe100;
+    color: #ffffff;
+}
+.listaE li a:hover{
+    color: #ffe134;
+    font-weight: bold;
+}
+
+hr{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.banner img{
+    display: flex;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.banner h1{
+    text-align: center;
+    color: #ffe134;
+    font-size: 30px;
+}
+
+.banner p{
+    padding:10px 20% 0 20%;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+}
+
+.puntos{
+    padding: 20px;
+    display: flex;
+    gap: 40px;
+}
+
+.puntos h1{
+    text-align: center;
+    color: #ffe134;
+    font-size: 25px;
+}
+
+.puntos p{
+    text-align: justify;
+    color: white;
+    font-size: 25px;
+}
+
+.puntos div{
+    padding: 30px;
+    background-color: #171717;
+    border-radius: 20px;
+} 
+
+.puntos img{
+    background-color: none;
+    padding: 30px;
+    display: flex;
+    margin: 0 auto;
+}
+#nosotros1{
+    color: #ffe134;
+    font-weight: bold;
+}
