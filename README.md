@@ -13,3 +13,6 @@
 [Introduccion](#introduccion)
 
 ## Introduccion
+<p>Cambio en la operación: Para calcular la velocidad, debes dividir la distancia recorrida (dist) por el tiempo total (tiempo) en minutos. He corregido la línea dentro del método operacion a let vel = this.dist / tiempo;.
+Uso de console.log: Se debe llamar al método operacion() para obtener el valor de la velocidad y mostrarlo en la consola.
+El método operacion ahora devuelve la velocidad en términos de distancia por minuto, y este valor se imprime correctamente con console.log(velocidad.operacion());.</p>
