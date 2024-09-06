@@ -16,6 +16,8 @@
 
 [Estructura](#estructura)
 
+[Visualizacion](#visualizacion)
+
 
 ## Introduccion
 <p>Cambio en la operación: Para calcular la velocidad, debes dividir la distancia recorrida (dist) por el tiempo total (tiempo) en minutos. He corregido la línea dentro del método operacion a let vel = this.dist / tiempo;.
@@ -31,6 +33,18 @@ Catalogo :
 Apartado Nosotros: 
 
 Footer :
+
+## Visualizacion
+Se detallan las consideraciones de diseño y usabilidad de la landing page, incluyendo aspectos como:
+
+Diseño Responsivo: La CRUD APP se adaptada a diferentes dispositivos móviles facilitando su visualización.
+Paleta de Colores: Se utilizaron conceptos de psicología del color y diseño gráfico para internet a fin de generar una experiencia de usuario inigualable.
+Tipografía: Se incorporaron estilos vanguardista de diseño editorial para generar una mejor experiencia del lectura a los visitantes.
+
+![]()
+
+
+
 
 
 
